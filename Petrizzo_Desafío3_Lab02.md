@@ -6,10 +6,15 @@ Ejecutar un contenedor que corre `MongoDB` y con el cual nos conectaremos por 
 
 1. Iniciar el container de `MongoDB` utilizando el comando `docker run -d -p 27017:27017 --name m1 mongo`
    
-   
+   ![](/home/petrizzo/Descargas/CursoDevOps/Desafio3/Captura%20de%20pantalla_2023-02-21_06-38-57.png)
    
    1. Puedes conectarte al contenedor de Mongo con `docker exec -it m1 /bin/bash` y luego conectarte a `MongoDB` por medio del comando `mongosh`
-   2. Para salir de la terminal interactiva del contenedor, primero hay que salir de `MongoDB` tecleando el comando `exit`, y una vez fuera podemos tecler la combinación `Ctrl+P` y `Ctrl+Q` para salir
+   
+   ![](/home/petrizzo/Descargas/CursoDevOps/Desafio3/Captura%20de%20pantalla_2023-02-21_09-18-39.png)
+   
+   1. Para salir de la terminal interactiva del contenedor, primero hay que salir de `MongoDB` tecleando el comando `exit`, y una vez fuera podemos teclear la combinación `Ctrl+P` y `Ctrl+Q` para salir
+   
+   ****NOTA: la combinación ctrl+p y ctrl+q sale del VisualStudioCode***
 
 2. Utilizaremos los scripts de `Python` existentes en la carpeta para la colección de mongo, utilizando la librería https://api.mongodb.com/python/current/tutorial.html
    
