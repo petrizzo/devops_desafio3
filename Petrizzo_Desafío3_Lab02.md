@@ -34,5 +34,13 @@ Ejecutar un contenedor que corre `MongoDB` y con el cual nos conectaremos por 
    2. Revisa los registros por medio del CLI de `mongo` o de tu DBMS favorito
       
       
+      
+      Utilizamos la misma CLI desde el VSCode. Desde la línea de comando del `mongosh`, cambiamos a la base de datos `mi-db` con el comando `use db mi-db` y una vez allí procedemos a hacer algunas consultas como toda la información del documento "pt" y todos los registros con nombre de mascota "firulais".
+      
+      A continuación la salida de ambas consultas:
+      
+      ![](/home/petrizzo/Descargas/CursoDevOps/Desafio3/Captura%20de%20pantalla_2023-02-21_18-18-44.png)
 
 3. Una vez que hayas terminado de jugar con `MongoDB` y los scripts de `Python`, asegúrate de detener y remover el contenedor de `MongoDB` en ejecución utilizando `docker stop m1; docker rm m1`
+
+![](/home/petrizzo/Descargas/CursoDevOps/Desafio3/Captura%20de%20pantalla_2023-02-21_18-22-58.png)
