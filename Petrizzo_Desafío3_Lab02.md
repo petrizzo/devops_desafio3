@@ -18,8 +18,20 @@ Ejecutar un contenedor que corre `MongoDB` y con el cual nos conectaremos por 
 
 2. Utilizaremos los scripts de `Python` existentes en la carpeta para la colección de mongo, utilizando la librería https://api.mongodb.com/python/current/tutorial.html
    
+   **NOTA**:
+   
+   Antes de instalar  los scripts de Python, debo levantar el vagrant. Sin embargo, en mi caso, el vagrant no logra acceder a la dirección del hub de vagrant para descargar el box. Por eso, procedo a indicarle en el vagrantfile de dónde va a tomar el box que, en este caso, es una ubicación local. De esta forma, debí seguir lo establecido en el documento [caso.md](/home/petrizzo/Descargas/CursoDevOps/Caso.md) para proceder a ejecutar el vagrant y sus respectivas provisiones.
+   
+   
+   
    1. Instalar la librería de mongo por medio del comando `pip install pymongo`
-   2. Ejecuta los scripts con `python populate.py` y `python find.py`
-   3. Revisa los registros por medio del CLI de `mongo` o de tu DBMS favorito
+   
+   ![](/home/petrizzo/Descargas/CursoDevOps/Desafio3/Captura%20de%20pantalla_2023-02-21_16-07-08.png)
+   
+   1. Ejecuta los scripts con `python populate.py` y `python find.py`
+      
+      ![](/home/petrizzo/Descargas/CursoDevOps/Desafio3/Captura%20de%20pantalla_2023-02-21_16-10-09.png)
+   2. Revisa los registros por medio del CLI de `mongo` o de tu DBMS favorito
+   3. 
 
 3. Una vez que hayas terminado de jugar con `MongoDB` y los scripts de `Python`, asegúrate de detener y remover el contenedor de `MongoDB` en ejecución utilizando `docker stop m1; docker rm m1`
