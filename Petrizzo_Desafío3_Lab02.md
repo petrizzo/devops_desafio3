@@ -32,6 +32,7 @@ Ejecutar un contenedor que corre `MongoDB` y con el cual nos conectaremos por 
       
       ![](/home/petrizzo/Descargas/CursoDevOps/Desafio3/Captura%20de%20pantalla_2023-02-21_16-10-09.png)
    2. Revisa los registros por medio del CLI de `mongo` o de tu DBMS favorito
-   3. 
+      
+      
 
 3. Una vez que hayas terminado de jugar con `MongoDB` y los scripts de `Python`, asegúrate de detener y remover el contenedor de `MongoDB` en ejecución utilizando `docker stop m1; docker rm m1`
