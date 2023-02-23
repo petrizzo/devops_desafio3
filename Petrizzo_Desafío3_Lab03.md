@@ -27,6 +27,18 @@ Para hacerlo accesible, debo indicarle en qué puerto lo voy a utilizar en el co
 
 Sin embargo, no está mostrándose la carpeta /web. Para ello, detenemos y borramos el contenedor y realizamos la siguiente modificación al comando run:
 
+
+
+
+
+Fíjate si en la ruta donde se guardan los estáticos de nginx esta la carpeta,  otro tips te intentab copiar el contenido que hay de la carpeta que tal si usas un /*
+
+DevOpsSupportByRoxs, [22/2/23 7:35 A. M.]
+No, es que no estas copiando bien
+
+DevOpsSupportByRoxs, [22/2/23 7:35 A. M.]
+Intenta esto algo así... docker cp web/* contenedor:/ruta/codigo/statico
+
 ### Entrega
 
 Pueden Realizar la entrega en equipo o individual, recuerden usar solo un repositorio para la entregan y me suman como colaboradora a su repositorio para dar visibilidad de sus avances
