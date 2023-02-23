@@ -25,19 +25,19 @@ Para hacerlo accesible, debo indicarle en qué puerto lo voy a utilizar en el co
 
 ![](/home/petrizzo/Descargas/CursoDevOps/Desafio3/Captura%20de%20pantalla_2023-02-21_20-35-26.png)
 
-Sin embargo, no está mostrándose la carpeta /web. Para ello, detenemos y borramos el contenedor y realizamos la siguiente modificación al comando run:
+Sin embargo, no está mostrándose el contenido de la carpeta /web. el Nginx  muestra en el navegador el contenido de la carpeta `/usr/share/nginx/html.` Por lo tanto, el contenido de la carpeta /web deberá moverse a esa carpeta para que sea visualizado en el navegador a través del url `localhost:9999`. Para hacerlo utilizamos el comando `sudo docker cp /home/petrizzo/Descargas/CursoDevOps/doc-devops/devops-in-tech/challenge/03-Docker/03/web/* bootcamp-web:/usr/share/nginx/html`
+
+![](/home/petrizzo/Descargas/CursoDevOps/Desafio3/Captura%20de%20pantalla_2023-02-22_22-56-25.png)
 
 
 
+Una vez copiado allí, podemos verificar en el navegador que se despliega correctamente el archivo index.html
 
 
-Fíjate si en la ruta donde se guardan los estáticos de nginx esta la carpeta,  otro tips te intentab copiar el contenido que hay de la carpeta que tal si usas un /*
 
-DevOpsSupportByRoxs, [22/2/23 7:35 A. M.]
-No, es que no estas copiando bien
+![](/home/petrizzo/Descargas/CursoDevOps/Desafio3/Captura%20de%20pantalla_2023-02-22_22-57-20.png)
 
-DevOpsSupportByRoxs, [22/2/23 7:35 A. M.]
-Intenta esto algo así... docker cp web/* contenedor:/ruta/codigo/statico
+
 
 ### Entrega
 
