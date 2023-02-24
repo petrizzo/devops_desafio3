@@ -12,8 +12,6 @@ El comando `sudo docker run -d --name bootcamp-web -p80:80 nginx` nos permite ej
 
 * Ejecuta dentro del contenedor la acción ls, para comprobar que los archivos se han copiado correctamente.
   
-  
-  
   El comando `sudo docker exec -it bootcamp-web bash` permite verificar los archivos que están dentro del contenedor.
 
 ![](/home/petrizzo/Descargas/CursoDevOps/Desafio3/Captura%20de%20pantalla_2023-02-21_19-09-59.png)
@@ -29,15 +27,9 @@ Sin embargo, no está mostrándose el contenido de la carpeta /web. el Nginx  mu
 
 ![](/home/petrizzo/Descargas/CursoDevOps/Desafio3/Captura%20de%20pantalla_2023-02-22_22-56-25.png)
 
-
-
 Una vez copiado allí, podemos verificar en el navegador que se despliega correctamente el archivo index.html
 
-
-
 ![](/home/petrizzo/Descargas/CursoDevOps/Desafio3/Captura%20de%20pantalla_2023-02-22_22-57-20.png)
-
-
 
 ### Entrega
 
